@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140201213907) do
+ActiveRecord::Schema.define(version: 20140201215940) do
 
   create_table "rides", force: true do |t|
     t.string   "from"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20140201213907) do
     t.string   "name"
     t.decimal  "phone"
     t.decimal  "celphone"
+    t.decimal  "cpf"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

@@ -33,7 +33,10 @@ group :doc do
 end
 
 # Use Devise
- gem 'devise'
+gem 'devise'
+
+#Use Brazilian-Rails
+gem 'brazilian-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
