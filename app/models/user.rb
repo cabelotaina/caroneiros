@@ -4,4 +4,5 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   usar_como_cpf :cpf
+  has_many :rides, dependent: :destroy
 end
