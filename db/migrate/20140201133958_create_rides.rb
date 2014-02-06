@@ -9,5 +9,6 @@ class CreateRides < ActiveRecord::Migration
 
       t.timestamps
     end
+    add :user_id
   end
 end
