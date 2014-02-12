@@ -19,9 +19,12 @@ ActiveRecord::Schema.define(version: 20140201215940) do
     t.date     "day"
     t.time     "time"
     t.decimal  "price"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "rides", ["user_id"], name: "index_rides_on_user_id"
 
 # Could not dump table "users" because of following NoMethodError
 #   undefined method `[]' for nil:NilClass

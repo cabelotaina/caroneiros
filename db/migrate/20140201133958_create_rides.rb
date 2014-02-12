@@ -6,9 +6,9 @@ class CreateRides < ActiveRecord::Migration
       t.date :day
       t.time :time
       t.decimal :price
-
+      t.references :user
       t.timestamps
     end
-    add :user_id
+    add_index :rides, :user_id
   end
 end
